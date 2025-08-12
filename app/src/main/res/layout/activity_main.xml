@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- WebView 填滿畫面，但避開狀態列 -->
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"/>
+
+        <!-- 進度條 -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="24dp"
+            android:max="100"
+            android:progressTint="#0095f6"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <!-- 左下角按鈕組（位置再上移） -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="160dp"
+        android:orientation="vertical">
+
+        <!-- 重新整理按鈕（上方） -->
+        <ImageButton
+            android:id="@+id/fabRefresh"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:src="@android:drawable/ic_popup_sync"
+            android:background="@drawable/button_circle_background"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:alpha="0.7"
+            android:elevation="2dp"
+            android:contentDescription="重新整理頁面"
+            tools:ignore="HardcodedText"/>
+
+        <!-- 下載按鈕（下方） -->
+        <ImageButton
+            android:id="@+id/fabDownload"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/stat_sys_download"
+            android:background="@drawable/button_circle_background_blue"
+            android:scaleType="centerInside"
+            android:padding="12dp"
+            android:alpha="0.6"
+            android:elevation="2dp"
+            android:visibility="gone"
+            android:contentDescription="下載影片"
+            tools:ignore="HardcodedText"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
