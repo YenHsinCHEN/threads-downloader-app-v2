@@ -1,15 +1,17 @@
-*.iml
+# 創建 .gitignore
+echo "*.iml
 .gradle
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
+*.apk
+*.aab" > .gitignore
+
+# 提交
+git add .gitignore
+git commit -m "Add .gitignore"
+git push
