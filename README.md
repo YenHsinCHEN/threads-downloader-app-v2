@@ -1,24 +1,27 @@
-# Threads Video Downloader
+# Threads Downloader App v2
 
-一個用於下載 Threads 影片的 Android 應用程式
+增強版 Threads 影片和圖片下載器 for Android
 
-## 功能特點
+## 📱 新功能
+- ✨ 支援圖片下載
+- 🎥 支援影片下載
+- 📝 顯示作者名稱和貼文內容
+- 🔄 改進的重置功能
+- 🎯 更準確的媒體偵測
+- 📊 優化的使用者介面
 
-- ✅ 內建 WebView 瀏覽 Threads
-- ✅ 自動偵測頁面中的影片
-- ✅ 顯示影片作者和內容預覽
-- ✅ 支援批量下載
-- ✅ 全選/取消全選功能
-- ✅ 自動命名包含作者名稱
+## 🚀 使用方法
+1. 開啟應用程式
+2. 瀏覽 Threads 網站
+3. 點擊左側搜尋按鈕偵測媒體
+4. 選擇要下載的影片或圖片
+5. 點擊下載按鈕
 
-## 系統需求
+## 📝 版本歷史
+- v2.0 - 新增圖片下載功能、改進偵測邏輯
+- v1.0 - [原始版本](https://github.com/YenHsinCHEN/threads-downloader-app)（僅支援影片）
 
-- Android 7.0+ (API 24+)
-- 網路連接
-- 儲存權限（Android 9 及以下版本）
-
-## 安裝方式
-
-1. Clone 此儲存庫
-```bash
-git clone https://github.com/YenHsinCHEN/threads-downloader-app.git
+## 🛠️ 技術規格
+- Min SDK: 24 (Android 7.0)
+- Target SDK: 33
+- Language: Kotlin
